@@ -1,1 +1,1 @@
-# itstriviatime
+# itsTriviaTime.app
