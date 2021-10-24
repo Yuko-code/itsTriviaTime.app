@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="container">
+<h1>It's Trivia Time!</h1>
+
+<div id="top">
+<div class="triviaSelection">
+<label for="genre">Choose a genre:</label>
+<select name="genre" id="genre">
+  <option>General Knowledge</option>
+  <option>History</option>
+  <option>Music</option>
+  <option>Video Games</option>
+  <option>Film</option>
+  <option>Science/Nature</option>
+  <option>Science/Computers</option>
+  <option>Sports</option>
+  <option>Geography</option>
+  <option>Cartoon&Animations</option>
+  <option>Celebrities</option>
+</select>
+</div>
+
+<button id="btnGet">Get Trivia</button>
+</div>
+
+<div id="display">
+<div id="category"></div>
+<div id="question"></div>
+<div id="choices"></div>
+<div id="answer"></div>
+</div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
