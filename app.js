@@ -52,9 +52,7 @@ const genres=[
 
 btnGet.addEventListener('click', function(){
     const genre=document.getElementById('genre').selectedIndex;
-    const selectedId=genres[genre].id
-    document.getElementById("choices").innerHTML="<button id='btnChoices'>Display Choices</button>"
-    document.getElementById("answer").innerHTML="<button id='btnDisplayAnswer'>Display Aswer</button>"
+    const selectedId=genres[genre].id;
     fetch(`https://opentdb.com/api.php?amount=1&category=${selectedId}&type=multiple`)
     .then(
         function(response){
@@ -62,7 +60,23 @@ btnGet.addEventListener('click', function(){
                 console.log('Looks like there was a problem. Status Code: ' + response.status);
                 return;
             }
+            const displayContainer=document.getElementById("display");
+            displayContainer.classList.add("display");
+            const categoryContainer=document.createElement('div');
+            displayContainer.append(categoryContainer);
+            categoryContainer.id="category";
+            const questionContainer=document.createElement('div');
+            displayContainer.append(questionContainer);
+            questionContainer.id="question";
+            const choicesContainer=document.createElement('div');
+            displayContainer.append(choicesContainer);
+            choicesContainer.id="choices";
+            const answerContainer=document.createElement('div');
+            displayContainer.append(answerContainer);
+            answerContainer.id="answer";
 
+            document.getElementById("choices").innerHTML="<button id='btnChoices'>Display Choices</button>"
+            document.getElementById("answer").innerHTML="<button id='btnDisplayAnswer'>Display Aswer</button>"
             response.json().then(function(data){
                 //console.log(data.results[0])
                 answer=data.results[0].correct_answer;
@@ -72,7 +86,7 @@ btnGet.addEventListener('click', function(){
                 document.getElementById("question").innerHTML=question;
 
                 document.getElementById("btnChoices").addEventListener('click',function(){
-                btnChoices.setAttribute('disabled','disabled')
+                    btnChoices.classList.add('choiceBtn');
                 const choiceCorrect=data.results[0].correct_answer;
                 const choicesIncorrect=data.results[0].incorrect_answers;
                 const arr=choicesIncorrect;
@@ -102,7 +116,6 @@ btnGet.addEventListener('click', function(){
         console.log('Fetch Error :-S', err);
     });
 });
-
 
 
 

@@ -1,27 +1,41 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
     background-color: rgb(138, 184, 180);
+    height: 100vh;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    
 }
 
 
 #container{
-    margin:10px;
+    width:100%;
     text-align: center;
     display:flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     font-family:'Trebuchet MS', Arial, sans-serif;
+    max-width: 600px;
 }
 
 h1{
     font-family: 'Lobster', cursive;
     margin-bottom:30px;
+    font-size: 32px;
 }
 
 #top{
     background-color: rgb(221, 193, 142);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     border-radius: 10px;
+    width:90%;
+    font-size:15px;
 }
 
 #genre{
@@ -49,25 +63,26 @@ h1{
     background-color: rgb(189, 144, 115);
 }
 
-#category{
-    font-family: 'Lobster', cursive;
-    font-size:20px;
-}
 
 
-#display{
-    margin-top:40px;
+.display{
+    margin-top:20px;
     background-color: rgb(240, 228, 228);
     padding:10px;
     border-radius: 5px;
+    width:90%;
+    font-size: 15px;
+    padding:20px;
 }
-
+#category{
+    font-family: 'Lobster', cursive;
+    font-size:20px;
+    margin-bottom: 10px;
+}
 #question{
-    background-color:rgb(240, 228, 228);
-    border-radius:5px;
-    padding:10px;
     text-align: left;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 #btnChoices{
@@ -77,6 +92,10 @@ h1{
     border-radius: 15px;
     font-family:'Trebuchet MS', Arial, sans-serif;
     background-color: rgb(152, 134, 168);
+
+}
+.choiceBtn{
+    display:none;
 }
 
 li{
@@ -85,18 +104,47 @@ li{
 
 #Choices{
     text-align: center;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 
 #answer{
 color:rgb(75, 72, 72);
-margin-top: 20px;
 font-size:20px;
+margin-top:20px;
 }
 
 
 
+@media (min-width:400px){
+    h1{
+       font-size: 42px;
+    }
+    #top{
+        font-size:18px;
+    }
+    #display{
+        font-size: 20px;
+    }
+    #genre{
+        font-size: 18px;
+    }
+    
+    #btnGet{
+        font-size: 18px;
+    }
+    
+    #btnDisplayAnswer{
+        font-size: 18px;
+    }
+
+    #category{
+
+        font-size:30px;
+}
+
+}
 
 
 
