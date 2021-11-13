@@ -11,8 +11,6 @@ body{
     justify-content: center;
     color:black;
     text-decoration: none;
-    
-
 }
 
 
@@ -25,6 +23,7 @@ body{
     align-items: center;
     font-family:'Trebuchet MS', Arial, sans-serif;
     max-width: 600px;
+    text-decoration: none;
 }
 
 h1{
@@ -55,6 +54,7 @@ h1{
     border-radius: 15px;
     font-family:'Trebuchet MS', Arial, sans-serif;
     background-color: rgb(140, 140, 196);
+    text-decoration: none;
 }
 
 #btnDisplayAnswer{
