@@ -9,8 +9,7 @@ body{
     padding:0;
     display:flex;
     justify-content: center;
-    color:black;
-    text-decoration: none;
+
 }
 
 
@@ -23,7 +22,6 @@ body{
     align-items: center;
     font-family:'Trebuchet MS', Arial, sans-serif;
     max-width: 600px;
-    text-decoration: none;
 }
 
 h1{
@@ -55,6 +53,7 @@ h1{
     font-family:'Trebuchet MS', Arial, sans-serif;
     background-color: rgb(140, 140, 196);
     text-decoration: none;
+    color:black;
 }
 
 #btnDisplayAnswer{
@@ -64,6 +63,8 @@ h1{
     border-radius: 15px;
     font-family:'Trebuchet MS', Arial, sans-serif;
     background-color: rgb(189, 144, 115);
+    text-decoration: none;
+    color:black;
 }
 
 
@@ -96,6 +97,8 @@ h1{
     font-size:15px;
     font-family:'Trebuchet MS', Arial, sans-serif;
     background-color: rgb(152, 134, 168);
+    text-decoration: none;
+    color:black;
 
 }
 .choiceBtn{
