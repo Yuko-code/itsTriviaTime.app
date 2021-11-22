@@ -12,7 +12,7 @@ body{
 
 }
 
-button, button a, select {
+button, button a, #genre {
     color:#000000;
     text-decoration:none;
 }
