@@ -16,11 +16,6 @@ button, button a{
     color:#000000;
     text-decoration:none;
 }
-select{
-        color:#000000 !important;
-    text-decoration:none !important;
-}
-
 
 #container{
     width:100%;
