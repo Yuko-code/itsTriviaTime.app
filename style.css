@@ -16,6 +16,10 @@ button, button a{
     color:#000000;
     text-decoration:none;
 }
+select{
+        color:#000000 !important;
+    text-decoration:none !important;
+}
 
 
 #container{
@@ -47,8 +51,6 @@ h1{
     border-style: none;
     border-radius: 5px;
     font-family:'Trebuchet MS', Arial, sans-serif;
-    color:#000000 !important;
-    text-decoration:none !important;
 }
 
 #btnGet{
@@ -69,7 +71,6 @@ h1{
     border-radius: 15px;
     font-family:'Trebuchet MS', Arial, sans-serif;
     background-color: rgb(189, 144, 115);
-
 }
 
 
