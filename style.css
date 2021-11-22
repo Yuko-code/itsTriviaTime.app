@@ -47,6 +47,8 @@ h1{
     border-style: none;
     border-radius: 5px;
     font-family:'Trebuchet MS', Arial, sans-serif;
+    color:#000000 !important;
+    text-decoration:none !important;
 }
 
 #btnGet{
