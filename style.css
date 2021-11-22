@@ -12,6 +12,11 @@ body{
 
 }
 
+button, button a {
+    color:#000000;
+    text-decoration:none;
+}
+
 
 #container{
     width:100%;
