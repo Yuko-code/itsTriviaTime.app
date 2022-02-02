@@ -26,8 +26,9 @@ Users will be able to:
 
 ## Useful resources
 
-- [Trivia App in JavaScript](https://www.youtube.com/watch?v=zgHim4ZDpZY)
-- [Javascript Trivia Game Code | Full Code Included](https://www.youtube.com/watch?v=ych1L9J-bDY)
+- [Trivia App in JavaScript](https://www.youtube.com/watch?v=zgHim4ZDpZY)- by Ania Kubow
+- [Javascript Trivia Game Code | Full Code Included](https://www.youtube.com/watch?v=ych1L9J-bDY) - by Framework Tech Media
+
 
 
 ## Author
